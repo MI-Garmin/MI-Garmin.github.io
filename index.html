@@ -153,6 +153,84 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Mysql连接问题记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/11/Mysql%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/">Mysql连接问题记录</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/11/Mysql%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" class="archive-article-date">
+  	<time datetime="2020-04-11T11:32:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>近期，在迁移开发环境到新电脑时，在尝试在navicat中连接mysql时出现了错误提示:</p>
+<blockquote>
+<p>MySQL 连接出现 Authentication plugin ‘caching_sha2_password’ cannot be loaded</p>
+</blockquote>
+<p>在查阅了资料后，了解到原来是mysql8之后，加密规则的改变导致了连接不了的问题。下面就记录一下解决的办法；<br>这里方法是把mysql用户密码规则修改回mysql_native_password模式。</p>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">record</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/11/Mysql%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Hexo博客搭建记录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -322,7 +400,7 @@
 
         
         <a href="/2020/04/05/hello-world/" class="archive-article-date">
-  	<time datetime="2020-04-05T02:50:20.268Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-05</time>
+  	<time datetime="2020-04-05T02:50:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-05</time>
 </a>
         
       </header>
