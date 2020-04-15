@@ -6,23 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Garmin&#39;s Blog</title>
+  <title>Mac下Apache使用记录 | Garmin&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="personal Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Garmin&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="Mac系统下自带Apache的使用 在进行程序开发调试时，对于刚开始接触的人来说，最为糟心的估计就是配置环境了…..幸运的是，在Mac环境下，系统本身是自带了一个Apache服务器的，下面就来记录一下怎么来使用这个服务器。  启动Apache">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac下Apache使用记录">
+<meta property="og:url" content="http://yoursite.com/2020/04/15/Mac%E4%B8%8BApache%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="Garmin&#39;s Blog">
-<meta property="og:description" content="personal Blog">
+<meta property="og:description" content="Mac系统下自带Apache的使用 在进行程序开发调试时，对于刚开始接触的人来说，最为糟心的估计就是配置环境了…..幸运的是，在Mac环境下，系统本身是自带了一个Apache服务器的，下面就来记录一下怎么来使用这个服务器。  启动Apache">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/04/15/Mac%E4%B8%8BApache%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/apache.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/15/Mac%E4%B8%8BApache%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/example.png">
+<meta property="article:published_time" content="2020-04-14T16:00:00.000Z">
+<meta property="article:modified_time" content="2020-04-15T14:03:33.442Z">
 <meta property="article:author" content="Garmin Chan">
-<meta property="article:tag" content="blog">
-<meta property="article:tag" content=" personal">
-<meta property="article:tag" content=" computer">
-<meta property="article:tag" content="life record">
-<meta property="article:tag" content="life">
-<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="record">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/04/15/Mac%E4%B8%8BApache%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/apache.png">
   
     <link rel="alternative" href="/atom.xml" title="Garmin&#39;s Blog" type="application/atom+xml">
   
@@ -154,36 +154,57 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Mac下Apache使用记录" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Mac下Apache使用记录
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/15/Mac%E4%B8%8BApache%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" class="archive-article-date">
+
+        
+        <a href="/2020/04/15/Mac%E4%B8%8BApache%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" class="archive-article-date">
   	<time datetime="2020-04-14T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-15</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/15/Mac%E4%B8%8BApache%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/">Mac下Apache使用记录</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Mac系统下自带Apache的使用</p>
+<p>在进行程序开发调试时，对于刚开始接触的人来说，最为糟心的估计就是配置环境了…..幸运的是，在Mac环境下，系统本身是自带了一个Apache服务器的，下面就来记录一下怎么来使用这个服务器。</p>
+<blockquote>
+<p>启动Apache</p>
+</blockquote>
+<a id="more"></a>
 
-        <div class="article-info info-on-right">
-          
+<p>打开Terminal，输入命令： <code>sudo apachectl start</code> 进入浏览器输入“<a href="http://localhost”，页面显示‘it" target="_blank" rel="noopener">http://localhost”，页面显示‘it</a> works’ 则表示服务器已已经启动成功。</p>
+<img src="/2020/04/15/Mac%E4%B8%8BApache%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/apache.png" class="" title="[example]">
+
+<blockquote>
+<p>Apache的默认根目录为 “/Library/Webserver/Document/”下。Finder中按快捷键Command+shift+G 输入路径可快速进入到目录中。</p>
+</blockquote>
+<p>在目录下新建项目，然后网页输入地址，就可以在浏览器访问到项目了。Apache启动会占用电脑内存，所以不用时记得关闭服务器</p>
+<img src="/2020/04/15/Mac%E4%B8%8BApache%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/example.png" class="" title="[example]">
+
+<p>其他一些重要的操作命令</p>
+<blockquote>
+<p>重启apache： <code>sudo apachectl restart</code></p>
+<p>关闭apache： <code>sudo apachectl stop</code> </p>
+<p>查看版本号： <code>sudo apachectl -v</code> </p>
+</blockquote>
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -195,160 +216,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/15/Mac%E4%B8%8BApache%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/11/Mysql%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" class="archive-article-date">
-  	<time datetime="2020-04-11T11:32:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/04/11/Mysql%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Mysql连接问题记录</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/11/Mysql%E8%BF%9E%E6%8E%A5%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/">Mysql连接问题记录</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">record</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/07/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/" class="archive-article-date">
-  	<time datetime="2020-04-06T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-07</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/07/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/">Hexo博客搭建记录</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">tech</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/05/My-First-essay/" class="archive-article-date">
-  	<time datetime="2020-04-05T03:05:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/05/My-First-essay/">My First essay</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">record</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/04/05/hello-world/" class="archive-article-date">
-  	<time datetime="2020-04-05T02:50:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-05</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/04/05/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -371,8 +338,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
