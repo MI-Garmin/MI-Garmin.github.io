@@ -164,6 +164,87 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-关于git push报错：提示用token验证" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/02/08/%E5%85%B3%E4%BA%8Egit%20push%E6%8A%A5%E9%94%99%EF%BC%9A%E6%8F%90%E7%A4%BA%E7%94%A8token%E9%AA%8C%E8%AF%81/">关于git push报错：提示用token验证</a>
+    </h1>
+  
+
+        
+        <a href="/2021/02/08/%E5%85%B3%E4%BA%8Egit%20push%E6%8A%A5%E9%94%99%EF%BC%9A%E6%8F%90%E7%A4%BA%E7%94%A8token%E9%AA%8C%E8%AF%81/" class="archive-article-date">
+  	<time datetime="2021-02-08T01:19:29.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-02-08</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title:关于git push报错：提示用token验证<br>date:2022-03-01<br>tags:note</p>
+<hr>
+<p>近期在鼓捣guthub远程仓库，在本地push代码到仓库时发现报错了，错误提示为：</p>
+<blockquote>
+<p><code>remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead. remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.</code></p>
+</blockquote>
+<hr>
+<p>如同字面意思，就是自2021-08-13起，为保证上传代码的安全性，改为使用token验证的方式，所以我们在push本地代码到仓库时需要预先生成一个token做验证用。而在github生成token的方法也很简单——</p>
+<blockquote>
+<p>首先，登录账户后点击头像，进入 <strong>setting</strong>，左侧栏找到 <strong>Developer seetting</strong> 进入</p>
+<p>然后会找 <strong>Personal access tokens</strong>选项，点击 *<em>generate new token *</em></p>
+<p>输入信息，Note为标记，类似于说明token的用处，下面的选项按需求勾选（一般只用于上传，可以只勾选<em>repo</em>， 然后点击 <strong>Generate token</strong>, 就完成token的创建了。</p>
+<p><strong>需要注意的是，在创建完token后，不要着急关闭页面，此时页面会有一串系统自动生成的字符串即为token，把其复制粘贴到其它地方备用，在验证时需要</strong></p>
+<p><strong>（一旦退出页面再进入就看不到了）</strong></p>
+</blockquote>
+<blockquote>
+<p>当本地代码需上传到仓库时，就要用到上文提及的token了，在提示验证username和password时，password栏输入token即可，亦即将toekn代替密码输入。</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/02/08/%E5%85%B3%E4%BA%8Egit%20push%E6%8A%A5%E9%94%99%EF%BC%9A%E6%8F%90%E7%A4%BA%E7%94%A8token%E9%AA%8C%E8%AF%81/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-前端学习记录——新拟态示例" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
